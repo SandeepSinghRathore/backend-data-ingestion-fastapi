@@ -1,6 +1,9 @@
 from fastapi import APIRouter
 
-router = APIRouter(prefix="/api", tags=["Data Ingestion"])
+router=  APIRouter(
+    prefix="/api",
+    tags=["Data Ingestion"]
+)
 
 @router.get("/databases")
 def list_databases():
